@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+#hero{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(65, 64, 64, 0.65), rgba(17, 17, 17, 0)),url('./img/pexels-git-stephen-gitau-1667843.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.navbar{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 10;
+}
+
+.navbar .logo{
+    width: 60px;
+    margin: 30px 0;
+    cursor: pointer;
+}
+
+.navbar img{
+    background: #fff;
+    border-radius: 50%;
+    margin-top: 2%;
+}
+
+
+.user img{
+    width: 30px;
+    margin-left: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+
+button{
+    padding: 8px 25px;
+    background: transparent;
+    outline: none;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    font-size: 12px;
+    cursor: pointer; 
+    color: #fff;
+}
+
+.container{
+    width: 50%;
+    height: 100vh;
+    background: rgba(86, 86, 86, .3);
+    backdrop-filter: bold;
+    position: absolute;
+    left: 0;
+    top: 0;  
+}
+
+.info{
+    width: 550px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+.info h1{
+    font-size: 60px;
+    letter-spacing: 10px;
+}
+
+.info p{
+    color: #f0eef1;
+    font-size: 14px;
+    margin: 20px 0;
+    line-height: 18px;
+}
+
+.info input{
+    width: 50%;
+    padding: 8px 10px;
+    outline: none;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    background: transparent;
+    color: #fff;
+    font-size: 12px;
+}
+
+::placeholder{
+    color: #fff;
+    font-size: 17px;
+}
+
+
+.slider{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 30px;
+    bottom: 50px;
+}
+
+#prev, #next{
+    width: 20px;
+    cursor: pointer;
+}
+
+.preview{
+    display: flex;
+    align-items: center;
+    margin: 0 6px;
+}
+
+.preview img{
+    width: 60px;
+    margin: 0 10px;
+    opacity: .4;
+}
+
+.preview .active{
+    display: block;
+    border: 3px solid #fff;
+    width: 100px;
+    opacity: 1;
+    transition: all .2s ease-in;
+}
